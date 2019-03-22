@@ -1,0 +1,27 @@
+/*------------------------------------------------------------
+	Bir dizinin toplamını bulan metod
+--------------------------------------------------------------*/
+package org.app;
+class App {
+	public static void main(String [] args)
+	{
+		int [] a = {3, 4, 5, 6, 7};
+		
+		int result = Array.Sum(a);
+		System.out.printf("sum:%d", result);
+	}
+}
+class Array{
+	public static int Sum(int [] a , int initial)
+	{	
+		int result = initial;
+		for (int i = 0; i < a.length; ++i)
+			result += a [i];
+		
+		return result;
+	}
+	public static int Sum(int [] a)
+	{
+		return Sum(a, 0);
+	}
+}
