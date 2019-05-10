@@ -9,4 +9,14 @@
 
         return a;
     }
+    
+    public static int [] getRandomArray(int n, int min, int max)
+    {
+        return getRandomArray(new Random(), n, min, max);
+    }
+
+    public static int [] getRandomArray (int n, int max)
+    {
+        return getRandomArray(n, 0, max);
+    }
 }    
