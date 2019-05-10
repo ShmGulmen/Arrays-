@@ -1,0 +1,21 @@
+class ArrayUtil{
+  public static int sum(int [] a, int initial)
+    {
+        int result = initial;
+
+        for (int i = 0; i < a.length; ++i)
+            result += a[i];
+
+        return result;
+    }
+
+    public static int sum(int [] a)
+    {
+        return sum(a, 0);
+    }
+    
+    public static double avarage(int [] a)
+    {
+        return (double)sum(a) / a.length;
+    }
+}
