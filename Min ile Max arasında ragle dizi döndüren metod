@@ -1,0 +1,12 @@
+ 
+ class ArrayUtil{
+ public static int [] getRandomArray(Random r, int n, int min, int max)
+    {
+        int [] a = new int[n];
+
+        for (int i = 0; i < n; ++i)
+            a [i] = r.nextInt(max - min) + min;
+
+        return a;
+    }
+}    
