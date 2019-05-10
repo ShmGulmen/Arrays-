@@ -1,0 +1,13 @@
+class ArrayUtil{
+public static char [] reverse(char [] a)
+    {
+        int charlen = a.length / 2;
+
+        for (int i = 0; i < charlen; ++i) {
+            char temp = a[i];
+            a[i] = a[a.length - 1 - i];
+            a[a.length - 1 - i] = temp;
+        }
+        return a;
+    }
+}    
